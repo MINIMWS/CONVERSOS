@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojas Internacionais</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lojas Internacionais</h1>
+        <div class="store-list">
+            <a href="https://www.amazon.co.uk/s?k=parfum+de+marly&crid=1T2K1HVFCD84K&sprefix=parfum+de+m%2Caps%2C344&ref=nb_sb_ss_ts-doa-p_1_11" target="_blank" class="store-link">Amazon Britânica</a>
+            <a href="https://www.amazon.com" target="_blank" class="store-link">Amazon Estadunidense</a>
+            <a href="https://www.amazon.de" target="_blank" class="store-link">Amazon Alemã</a>
+            <a href="https://www.amazon.fr" target="_blank" class="store-link">Amazon Francesa</a>
+            <a href="https://www.amazon.co.jp" target="_blank" class="store-link">Amazon Japonesa</a>
+            <a href="https://www.cars.com" target="_blank" class="store-link">Carros</a>
+            <a href="https://www.skyscanner.net" target="_blank" class="store-link">Passagens Aéreas</a>
+            <a href="https://www.zillow.com" target="_blank" class="store-link">Casas</a>
+            <a href="https://www.yelp.com" target="_blank" class="store-link">Lojas Locais</a>
+            <a href="https://www.google.com/maps" target="_blank" class="store-link">Locais</a>
+        </div>
+
+        <div class="tourist-info">
+            <h2>Pontos Turísticos</h2>
+            <a href="https://www.tripadvisor.com" target="_blank" class="store-link">TripAdvisor - Pontos Turísticos</a>
+            <a href="https://www.lonelyplanet.com" target="_blank" class="store-link">Lonely Planet - Pontos Turísticos</a>
+        </div>
+
+        <div class="recommendations">
+            <h2>Recomendações no YouTube</h2>
+            <a href="https://www.youtube.com/watch?v=4hXzeXTfm4k" target="_blank" class="store-link">EUROPA INTERCAMBIO</a>
+            <a href="https://www.youtube.com/watch?v=fbFnF-86eYs" target="_blank" class="store-link">USA </a>
+        </div>
+    </div>
+    <h2>coloque seu CPF</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .slider-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .slider {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .value-container {
+            margin-top: 10px;
+        }
+        .value {
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <input type="range" id="slider" class="slider" min="0" max="50000000000000" value="0" step="10000">
+        <div class="value-container">
+            <input type="number" id="numberInput" class="value" min="0" max="5000000000000" value="0" step="10000000">
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const numberInput = document.getElementById('numberInput');
+
+        function updateValues(value) {
+            slider.value = value;
+            numberInput.value = value;
+        }
+
+        slider.addEventListener('input', function() {
+            updateValues(slider.value);
+        });
+
+        numberInput.addEventListener('input', function() {
+            updateValues(numberInput.value);
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>

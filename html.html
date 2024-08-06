@@ -1,0 +1,67 @@
+<h2>coloque seu CPF</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .slider-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .slider {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .value-container {
+            margin-top: 10px;
+        }
+        .value {
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <input type="range" id="slider" class="slider" min="0" max="50000000000000" value="0" step="10000">
+        <div class="value-container">
+            <input type="number" id="numberInput" class="value" min="0" max="5000000000000" value="0" step="10000000">
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const numberInput = document.getElementById('numberInput');
+
+        function updateValues(value) {
+            slider.value = value;
+            numberInput.value = value;
+        }
+
+        slider.addEventListener('input', function() {
+            updateValues(slider.value);
+        });
+
+        numberInput.addEventListener('input', function() {
+            updateValues(numberInput.value);
+        });
+    </script>

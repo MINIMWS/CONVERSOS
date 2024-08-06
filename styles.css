@@ -1,0 +1,74 @@
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(255, 99, 71), rgb(75, 192, 192));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container do conversor */
+.converter-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grupo de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo do label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para selects e inputs */
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do resultado */
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result-text {
+    font-weight: bold;
+}
